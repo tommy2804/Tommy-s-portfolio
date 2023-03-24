@@ -1,3 +1,34 @@
+.project-card-view {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+  color: #191919 !important;
+  background-color: transparent !important;
+  border: transparent;
+  transition: all 0.5s ease 0s !important;
+  height: 100vh !important;
+  margin-top: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  width: 55vw;
+  height: 100%;
+}
+.project-image {
+  width: 45vw;
+
+  height: 40vh;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.5s ease 0s;
+}
+
 .projectbackground {
   width: 100%;
   height: 100%;
@@ -17,17 +48,6 @@
   min-height: 55vh !important;
 }
 
-.project-card-view {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
-  color: #191919 !important;
-  background-color: transparent !important;
-  border: transparent;
-  opacity: 0.9 !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-  border-radius: 15px;
-}
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
