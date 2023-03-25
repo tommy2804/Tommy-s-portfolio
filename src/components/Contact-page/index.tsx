@@ -2,16 +2,20 @@ import './contact.css';
 import { Container } from 'react-bootstrap';
 import { FaWhatsapp, FaLinkedinIn } from 'react-icons/fa';
 import { SiGmail } from 'react-icons/si';
+import Kube from './kube';
 
 function Contactpage() {
   return (
     <div className="contactbackground">
-      <Container>
+      <Container style={{ position: 'relative' }}>
         <h2 className="contacthead">Get In Touch</h2>
         <p className="contactpara">
           I’m currently searching for opportunities for a full-stack/ front-end/ back-end role.
           <br /> you have any further questions or just want to say hi, <br />
         </p>
+
+        <Kube />
+
         <button className="contactbtn" onClick={() => {}}>
           Say Hello
         </button>

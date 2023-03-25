@@ -58,3 +58,43 @@
     display: none;
   }
 }
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.side-cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  opacity: 0.6;
+}
+
+.front-cube {
+  transform: rotateY(0deg) translateZ(100px);
+  background-color: #ee4444;
+}
+.right-cube {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: #ffcc00;
+}
+.back-cube {
+  transform: rotateY(180deg) translateZ(100px);
+  background-color: #ff0055;
+}
+.left-cube {
+  transform: rotateY(-90deg) translateZ(100px);
+  background-color: #8855ff;
+}
+.top-cube {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: #0099ff;
+}
+.bottom-cube {
+  transform: rotateX(-90deg) translateZ(100px);
+  background-color: #22cc88;
+}

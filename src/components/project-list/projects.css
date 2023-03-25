@@ -6,7 +6,18 @@
 }
 .project-section {
   position: relative !important;
-  padding-top: 10px !important;
+  padding-top: 100px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.project-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .project-card {
   padding-top: 20px;
