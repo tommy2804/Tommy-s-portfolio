@@ -11,11 +11,22 @@ function Aboutpage() {
               <span> About Me</span>
             </h3>
             <p className="aboutdetails">
-              Hi, I'm Tommy Rozenberg, a 23-year-old freelancer fullstack developer from Israel. I'm
-              passionate about coding and creating exceptional digital experiences. With expertise
-              in a range of programming languages and frameworks, I'm always seeking new challenges
-              and opportunities to grow my skills. Let's work together to bring your digital ideas
-              to life.
+              Hello, I'm Tommy Rozenberg, a junior full-stack developer with a passion for creating
+              innovative and intuitive web applications. With almost a year of experience in the
+              field, I have honed my skills in a variety of tools and technologies, enabling me to
+              create dynamic and responsive websites.
+              <br />
+              <br />
+              In my portfolio, I showcase some of my recent projects, which demonstrate my ability
+              to design and develop engaging web applications. Through my work, I have gained
+              experience in both client-side and server-side programming, as well as in using
+              various frameworks and libraries. As a fast learner and detail-oriented individual, I
+              am committed to continually improving my skills and staying up-to-date with the latest
+              industry trends.
+              <br /> <br /> I am eager to take on new challenges and work collaboratively with
+              others to produce high-quality results. If you are interested in working with me or
+              have any questions, please feel free to get in touch. I would be delighted to hear
+              from you and discuss how I can contribute to your next project.
             </p>
             <ul className="skilllist">
               <Row>

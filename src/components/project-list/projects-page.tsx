@@ -1,8 +1,40 @@
-import { AiFillGithub } from 'react-icons/ai';
+import React, { useState } from 'react';
+import { SiWesterndigital } from 'react-icons/si';
 import './projects.css';
 
-function ProjectsPage() {
-  return <div>ProjectsPage</div>;
-}
+const ProjectPage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-export default ProjectsPage;
+  const data = [
+    'https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    'https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    'https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600',
+  ];
+
+  const prevSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
+  };
+  const nextSlide = () => {
+    setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
+  };
+
+  return (
+    <div className="slider">
+      <div className="container" style={{ transform: `translateX(-${currentSlide * 100}vw)` }}>
+        <img src={data[0]} alt="" />
+        <img src={data[1]} alt="" />
+        <img src={data[2]} alt="" />
+      </div>
+      <div className="arrow-icons">
+        <div className="arrow-icon" onClick={prevSlide}>
+          <SiWesterndigital />
+        </div>
+        <div className="arrow-icon" onClick={nextSlide}>
+          <SiWesterndigital />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectPage;
